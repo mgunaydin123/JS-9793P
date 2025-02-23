@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh; 
+    color: #fff; 
+    font-weight: bolder;
+    background-image: url('/assets/img/kafatası.avif') ; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    overflow: hidden;
+    background-color: #d29806;
+}
+
+#counter {
+    font-size:40px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding-top: 40px;
+    color:#b4126b; 
+}
+button {
+    padding:20px 30px;
+    font-size:35px;
+    cursor: pointer;
+    margin: 200px;
+    border: none; 
+    border-radius: 20px; 
+    background-color: #be177e; 
+    color: burlywood; 
+    
+}
+button:hover {
+    background-color: #570527; 
+}
+
+#background-video {
+    position: fixed;
+    top: -9999px;
+    left: -9999px; 
+    width: 0; 
+    height: 0; 
+}
+#background-audio {
+    display: none; 
+}
