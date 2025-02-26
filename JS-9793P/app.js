@@ -24,14 +24,6 @@ function updateCounterText() {
         if (audio.paused) {
             audio.currentTime = 0; 
             audio.play() 
-                .then(() => {
-                    timeoutId = setTimeout(() => {
-                        audio.pause(); 
-                    }, 10000); 
-                })
-                .catch(function(error) {
-                    console.log("Müzik çalma hatası:", error);
-                });
         }
     }
 
