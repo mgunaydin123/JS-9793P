@@ -3,6 +3,7 @@ let count = 0;
 document.getElementById('incrementButton').addEventListener('click', function() {
     count++;
     updateCounterText();
+    playMusic();
 });
 
 document.getElementById('resetButton').addEventListener('click', function() {
@@ -18,7 +19,7 @@ function updateCounterText() {
     const audio = document.getElementById('background-audio');
     const incrementButton = document.getElementById('incrementButton');
     const resetButton = document.getElementById('resetButton');
-    let timeoutId; 
+  
 
     function playMusic() {
         if (audio.paused) {
@@ -32,5 +33,4 @@ function updateCounterText() {
     resetButton.addEventListener('click', () => {
         audio.pause();
         audio.currentTime = 0; 
-        clearTimeout(timeoutId); 
     });
